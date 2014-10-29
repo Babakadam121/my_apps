@@ -2,9 +2,12 @@ Rails.application.routes.draw do
   get 'index', to: 'home#hello', as: 'index'
   get 'result', to: 'home#result', as: 'result'
 #----------------------------------------------------
-  get 'signup', to: 'home#signup', as: 'signup'
+  get 'signup', to: 'home#user', as: 'signup'
 #----------------------------------------------------
 
+
+  # root to: 'users#new'
+  # resources :articles
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
