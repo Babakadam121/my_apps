@@ -1,0 +1,18 @@
+<h1><%= @product %> in <%= @state %></h1>
+<style type="text/css">
+    table td{border-bottom: 1px solid #eee;}
+    table th{border-bottom: 2px solid #444;text-align:left;}
+    .count{text-align:right;}
+</style>
+<table>
+    <tr>
+        <th>Company Name</th>
+        <th>Number of Complaints</th>
+    </tr>
+<% @companies.each do |company| %>
+    <tr>
+        <td><%= company['company'] %></td>
+        <td class="count"><%= company['count'] %></td>
+    </tr>
+<% end %>
+</table>
