@@ -1,8 +1,8 @@
 
-<form method="GET" action="/result">
+<form method="GET" action="/result" class="main_form">
     <h2>Select Product:</h2>
     <% @products.each do |product| %>
-        <label>
+        <label class="radio_btn">
             <input type="radio" name="product" value="<%= product['product'] %>" /> <%= product['product'] %>
         </label>
     <% end %>

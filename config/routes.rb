@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home/user'
+
   get 'index', to: 'home#hello', as: 'index'
   get 'result', to: 'home#result', as: 'result'
 #----------------------------------------------------
