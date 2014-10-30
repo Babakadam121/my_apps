@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  get 'home/user'
 
-  get 'index', to: 'home#hello', as: 'index'
+  get 'index', to: 'home#index', as: 'index'
   get 'result', to: 'home#result', as: 'result'
 #----------------------------------------------------
   get 'signup', to: 'home#user', as: 'signup'

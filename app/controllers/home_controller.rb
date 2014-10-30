@@ -5,7 +5,7 @@ require "uri"
 
 
 class HomeController < ApplicationController
-    def hello
+    def index
         encoded_url = URI.encode("http://data.consumerfinance.gov/resource/x94z-ydhh.json?$select=product, count(complaint_id) as count&$group=product")
         uri = URI.parse(encoded_url)
 
