@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   resources :sessions
   resources :users
+
   root to: 'articles#index'
   resources :articles
 
