@@ -1,0 +1,17 @@
+<div class="main_form">
+<h1><%= @product %> in <%= @state %></h1>
+<div class="res">
+<table >
+    <tr>
+        <th>Company Name</th>
+        <th>Number of Complaints</th>
+    </tr>
+<% @companies.each do |company| %>
+    <tr>
+        <td><%= company['company'] %></td>
+        <td class="count"><%= company['count'] %></td>
+    </tr>
+<% end %>
+</table>
+</div>
+</div>
